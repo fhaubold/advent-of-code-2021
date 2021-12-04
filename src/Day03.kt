@@ -6,18 +6,18 @@ fun main() {
 
     fun binaryToDecimal(number: String): Long {
 
-        var result: Long = 0;
-        var bit = 0;
-        var n: Int = number.length - 1;
+        var result: Long = 0
+        var bit = 0
+        var n: Int = number.length - 1
 
         while (n >= 0) {
-            if (number.get(n) == '1') {
-                result += (1 shl (bit));
+            if (number[n] == '1') {
+                result += (1 shl (bit))
             }
-            n -= 1;
-            bit += 1;
+            n -= 1
+            bit += 1
         }
-        return result;
+        return result
     }
 
     fun part1(input: List<String>): Int {
